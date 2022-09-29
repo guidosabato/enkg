@@ -1,0 +1,102 @@
+:root {
+    --verde: #a4e69f;
+}
+
+h1 {
+    font-size: calc(3rem )
+}
+h2 {
+    font-size: calc(1rem )
+}
+*::before,
+*::after,
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Raleway', 'regular', sans-serif;
+    font-style: normal;
+    color: rgb(66, 65, 65);
+   
+
+}
+
+.header {
+    z-index: 23999;
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 1px solid rgb(106, 151, 92);
+
+}
+
+.leyenda {
+    display: grid;
+    justify-self: end;
+    align-items: center;
+    background-color: #d8f4d6;
+   
+    
+
+}
+.leyenda h2 {
+    font-size: 1.5em;  
+}
+
+/* logo*/
+.logo  {
+    z-index: 1000;
+    width: 10vw;
+    display: grid;
+    grid-template-areas:
+        "a b b"
+        "a c c";
+    grid-template-rows: 60% 40%;
+}
+
+
+
+
+.logo__icono img {
+    width: 3.6rem  
+}
+
+.logo__icono {
+    grid-area: a;    
+}
+
+.logo__subtitle {
+    margin: 0 auto;
+    grid-area: c;
+    display: flex; 
+}
+
+.logo__title {
+    display: flex;
+    align-items: center;
+    grid-area: b;
+}
+
+.imagen__centro {
+    width: 100%;
+    margin-top: 10em;
+   
+    
+}
+.imagen__centro img {
+    width: 100%;
+}
+/*leyenda*/
+
+
+
+
