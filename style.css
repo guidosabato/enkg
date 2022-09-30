@@ -37,15 +37,16 @@ body {
     display: grid;
     grid-template-columns: 30% 70%;
     border: 1px solid rgb(106, 151, 92);
-
+    background-color: radial-gradient(circle at 69.53% -3.66%, #fffff1 0, #fffff0 10%, #ffffee 20%, #f4ffeb 30%, #e6ffe7 40%, #d8f8e0 50%, #cce9d8 60%, #c3dcd1 70%, #bcd1ca 80%, #b7c7c3 90%, #b3c0be 100%);
+    background-image: radial-gradient(circle at 69.53% -3.66%, #fffff1 0, #fffff0 10%, #ffffee 20%, #f4ffeb 30%, #e6ffe7 40%, #d8f8e0 50%, #cce9d8 60%, #c3dcd1 70%, #bcd1ca 80%, #b7c7c3 90%, #b3c0be 100%);
 }
 
 .leyenda {
     display: grid;
     justify-self: end;
     align-items: center;
-    background-color: #d8f4d6;
     animation: roll-in-left 0.6s ease-out both;
+    
 }
 @keyframes roll-in-left {
     0% {
