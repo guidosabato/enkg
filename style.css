@@ -10,9 +10,7 @@ h2 {
 }
 *::before,
 *::after,
-img {
-    max-width: 100%;
-}
+
 * {
     
     box-sizing: border-box;
@@ -83,7 +81,7 @@ body {
     grid-template-areas:
         "a b b"
         "a c c";
-    grid-template-rows: 70% 20%;
+   
     color: black;
     animation: logo__anim 0.6s ease-out both;
     
@@ -156,7 +154,6 @@ body {
 .imagen__centro {
    margin-top: 3em;
     width: 100%;
-    max-width: 100%;
     display: grid;
     animation: imagen__centro__anim  0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     animation: imagen__centro__anim2 5s ease-out both;
