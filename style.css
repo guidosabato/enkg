@@ -1,221 +1,460 @@
-:root {
-    --verde: #a4e69f;
+@import url(//db.onlinewebfonts.com/c/6a28a1fb5b77054a12626d0c23c92aa2?family=CeraCY-Bold);
+
+@font-face {
+  font-family: "CeraCY-Bold";
+  src: url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.eot");
+  src: url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.svg#CeraCY-Bold") format("svg");
 }
 
-h1 {
-    font-size: calc(3rem )
+@import url(//db.onlinewebfonts.com/c/a1ab9bebae84d82fbcfe930c4643de7a?family=CeraCY-Regular);
+
+@font-face {
+  font-family: "CeraCY-Regular";
+  src: url("//db.onlinewebfonts.com/t/a1ab9bebae84d82fbcfe930c4643de7a.eot");
+  src: url("//db.onlinewebfonts.com/t/a1ab9bebae84d82fbcfe930c4643de7a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a1ab9bebae84d82fbcfe930c4643de7a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a1ab9bebae84d82fbcfe930c4643de7a.woff") format("woff"), url("//db.onlinewebfonts.com/t/a1ab9bebae84d82fbcfe930c4643de7a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a1ab9bebae84d82fbcfe930c4643de7a.svg#CeraCY-Regular") format("svg");
 }
-h2 {
-    font-size: calc(1rem )
-}
-*::before,
-*::after,
 
 * {
-    
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+
+body {
+  font-size: 100%;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
-    width: 98%;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Raleway', 'regular', sans-serif;
-    font-style: normal;
-    color: rgb(66, 65, 65);
-   
-
+  background: radial-gradient(ellipse at center, rgba(149, 143, 149, 1) 0%, rgb(0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#958f95', endColorstr='#38353d', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#958f95', endColorstr='#38353d', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#958f95', endColorstr='#38353d', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8f958f', endColorstr='#3a3d35', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  color: aliceblue;
+  font-family: Cera CeraCY-regular, sans-serif;
+display: flex;
+flex-direction: column;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  color: white;
+  font-size: 10vw;
+  font-family: "CeraCY-Bold";
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+
+  font-family: "CeraCY-Bold";
+}
+
+small {
+  font-size: 0.4rem;
+  font-family: Cera CeraCY-regular;
+  color: rgb(180, 180, 180);
+  line-height: 180%;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-family: "CeraCY-Bold";
+  line-height: 70%;
+}
+
+h6 {
+  text-align: start;
+  font-size: .8rem;
+  color: rgb(180, 180, 180);
+}
+
+
 
 .header {
-    z-index: 23999;
-    position: fixed;
-    top: 3%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid rgb(106, 151, 92);
-    background-color: radial-gradient(circle at 69.53% -3.66%, #fffff1 0, #fffff0 10%, #ffffee 20%, #f4ffeb 30%, #e6ffe7 40%, #d8f8e0 50%, #cce9d8 60%, #c3dcd1 70%, #bcd1ca 80%, #b7c7c3 90%, #b3c0be 100%);
-    background-image: radial-gradient(circle at 69.53% -3.66%, #fffff1 0, #fffff0 10%, #ffffee 20%, #f4ffeb 30%, #e6ffe7 40%, #d8f8e0 50%, #cce9d8 60%, #c3dcd1 70%, #bcd1ca 80%, #b7c7c3 90%, #b3c0be 100%);
+  margin-top: 4.7rem;
+  align-self: center;
 }
 
-.leyenda {
-    display: grid;
-    justify-self: end;
-    align-items: center;
-    animation: roll-in-left 0.6s ease-out both;
-    
-}
-@keyframes roll-in-left {
-    0% {
-      transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-
-.leyenda h2 {
-    font-size: 1.5em;  
+.header__p {
+  margin-left: 2rem;
 }
 
-@media (max-width: 500px)
-{
-    .leyenda {
-        visibility: hidden;
-    }
-}    
-
-
-/* logo*/
-.logo  {
-    z-index: 1000;
-    width: 10vw;
-    display: grid;
-    grid-template-areas:
-        "a b b"
-        "a c c";
-   
-    color: black;
-    animation: logo__anim 0.6s ease-out both;
-    
-}
-@keyframes logo__anim {
-    0% {
-      transform: translateX(800px) rotate(540deg);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-  
-
-
-
-
-.logo__icono img {
-    width: 3.6rem  
+.header__h2 {
+  letter-spacing: 1px;
 }
 
-.logo__icono {
-    grid-area: a;    
+.header__div {
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  margin-left: 14.5rem;
 }
 
-.logo__subtitle {
-    margin: 0 auto;
-    grid-area: c;
-    display: flex; 
+.main {
+  width: 70vw;
+  margin-top: 7rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.logo__title {
-    display: flex;
-    align-items: center;
-    grid-area: b;
+.main__container {
+  display: flex;
+  justify-content: space-between;
 }
 
-/*menu*/
-
-.nav {
-    margin-top: 8em;
-    
-}
-.menu {
-    font-size: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    animation: menu__anim 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   
+.main__container__left {
+  align-self: left;
+  line-height: 35px;
 }
 
-@keyframes menu__anim {
-    0% {
-      letter-spacing: 1em;
-      transform: translateZ(300px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateZ(12px);
-      filter: blur(0);
-      opacity: 1;
-    }
-  }
-  
- 
-.imagen__centro {
-   margin-top: 3em;
-    width: 100%;
-    display: grid;
-    animation: imagen__centro__anim  0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation: imagen__centro__anim2 5s ease-out both;
-}
-.imagen__centro img {
-    width: 100%;
-    height: 300px; 
+.main__container__right {
+  text-align: right;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  justify-content: space-between;
 }
 
- @keyframes imagen__centro__anim2 {
-    0% {
-      transform: scale(1) translate(0, 0);
-      transform-origin: 84% 50%;
-    }
-    100% {
-      transform: scale(1.25) translateX(20px);
-      transform-origin: right;
-    }
-  }
-  
+
+.main__container__right h6 {
+  text-align: center;
+
+}
+
+.main__container__box {
+
+  margin-top: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-content: space-around;
+  justify-content: space-around;
+}
 
 
-@keyframes imagen__centro__anim {
-    0% {
-        transform: rotateY(-100deg);
-    transform-origin: right;
-    opacity: 0;
-  }
-  100% {
-    transform: rotateY(0);
-    transform-origin: right;
-    opacity: 1;
-    }
-  }
-/*leyenda*/
 
-/*footer*/
+.box {
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  opacity: .5;
+  box-shadow: 19px 21px 54px 0px rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+  grid-template-rows: 85px auto 120px;
+  grid-template-areas:
+    "ul . ur"
+    ". c . "
+    "dl c dr";
+
+}
+
+.box>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box__up__right {
+  grid-area: ur;
+}
+
+.box__up__right small {
+  margin-right: 100px;
+}
+
+.box__up__left {
+  grid-area: ul;
+  flex-direction: column;
+}
+
+.box__center {
+  grid-area: c;
+}
+
+.box__center__1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.box__center__1 h1 {
+  line-height: 95%;
+}
+
+.box__center__1 small {
+  line-height: 300%;
+}
+
+.box__center__1__small__up {
+  margin-right: 20em;
+
+}
+
+.box__center__1__small__down__up {
+  margin-left: 7em;
+
+}
+
+.box__center__1__small__down__down {
+  margin-left: 11em;
+}
+
+
+.box__down__left {
+  grid-area: dl;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px
+}
+
+.box__down__right {
+  grid-area: dr;
+
+}
+
+.box__down__right__rotate {
+  display: flex;
+  rotate: 90deg;
+
+
+}
+
+.box__down__right__rotate small {
+  line-height: 20%;
+}
+
+#box3 {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+#box3>div {
+  width: 50%;
+  height: 100%;
+}
+
+.box__center__left3__text {
+  width: 80%;
+  text-align: center;
+}
+
+.box__center__left3__text__lorem {
+  margin-top: 30px;
+}
+.box__center__left3__text__adress{
+  margin-top: 20px; 
+}
+
+.box__center__left3__text__adress small {
+  vertical-align: super;
+}
+
+
+.box__center__right3 {
+  border: medium solid rgb(25, 25, 25);
+  box-shadow: -3px 5px 15px 5px #000000;
+  max-height: 270px;
+  margin-bottom: 80px;
+  max-width: 90%;
+}
+
+.form {
+  width: 85%;
+  height: 200px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 100%;
+  height: 30px;
+  font-size: 0.7em;
+  font-family: "CeraCY-Regular";
+  color: rgb(194, 194, 194);
+}
+
+.form__buttom {
+  border: medium solid rgb(0, 0, 0);
+  width: 30%;
+  max-width: 160px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 6px 6px 5px 0px rgba(58, 58, 58, 0.75);
+  margin-top: 20px;
+
+}
+
 .footer {
-    margin-top: 5%;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    background-color: #d8f4d6;
-    animation-name: footer__anim;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   
+  margin-top: 120px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
-@keyframes footer__anim
-{
-    0%   {background-color: rgb(201, 231, 238);}
-    25%  {background-color: #d8f4d6;}
-    50%  {background-color: rgb(227, 227, 227);}
-    100% {background-color: rgb(177, 255, 241);}
-  
+.footer__small__up {
+  margin-right: 20em;
+}
+
+.footer__small__down {
+  margin-left: 13em;
 }
 
 
+@media (max-width: 400px) {
+  .box__center small {
+    margin: auto 0;
+  }
+
+  .main {
+    width: 99%;
   
+  }
+
+  h4 {
+    font-size: 0.5em;
+  }
 
 
+}
 
+@media (max-width: 600px) {
 
-
+.box__center__left3__text__lorem {
+  display: none;
+}
+}
