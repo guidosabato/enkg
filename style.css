@@ -1,3 +1,5 @@
+/* importamos la tipografía cera cy*/
+
 @import url(//db.onlinewebfonts.com/c/6a28a1fb5b77054a12626d0c23c92aa2?family=CeraCY-Bold);
 
 @font-face {
@@ -127,29 +129,20 @@ svg {
 }
 
 
-body {
-  font-size: 100%;
-}
-
 html {
   font-size: 100%;
 }
 
 body {
+  font-size: 100%;
   background: radial-gradient(ellipse at center, rgba(149, 143, 149, 1) 0%, rgb(0, 0, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#958f95', endColorstr='#38353d', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#958f95', endColorstr='#38353d', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#958f95', endColorstr='#38353d', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8f958f', endColorstr='#3a3d35', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
   color: aliceblue;
   font-family: Cera CeraCY-regular, sans-serif;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  opacity: .7;
+  width: 98%;
+
 }
 
 *,
@@ -168,12 +161,11 @@ h1 {
 h2 {
   color: rgb(255, 255, 255);
   font-size: 2vw;
-
   font-family: "CeraCY-Bold";
 }
 
 small {
-  font-size: 0.4rem;
+  font-size: .8rem;
   font-family: Cera CeraCY-regular;
   color: rgb(180, 180, 180);
   line-height: 180%;
@@ -191,208 +183,106 @@ h6 {
   color: rgb(180, 180, 180);
 }
 
-
-
 .header {
-  margin-top: 4.7rem;
-  align-self: center;
-}
-
-.header__p {
-  margin-left: 2rem;
-}
-
-.header__h2 {
-  letter-spacing: 1px;
-}
-
-.header__div {
-  display: flex;
-  flex-direction: column;
-  line-height: 10px;
-  margin-left: 14.5rem;
+display: flex;
+justify-content: space-between;
 }
 
 .main {
-  width: 70vw;
-  margin-top: 7rem;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.main__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main__container__left {
-  align-self: left;
-  line-height: 35px;
-}
-
-.main__container__right {
-  text-align: right;
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-self: right;
-  justify-content: space-between;
-}
-
-
-.main__container__right h6 {
-  text-align: center;
-
-}
-
-.main__container__box {
-
-  margin-top: 86px;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  align-content: space-around;
-  justify-content: space-around;
-}
-
-
-
-.box {
-  height: 400px;
-  background-color: rgb(0, 0, 0);
-  opacity: .5;
-  box-shadow: 19px 21px 54px 0px rgba(0, 0, 0, 0.75);
-  display: grid;
-  grid-template-columns: 70px auto 70px;
-  grid-template-rows: 85px auto 120px;
-  grid-template-areas:
-    "ul . ur"
-    ". c . "
-    "dl c dr";
-
-}
-
-.box>div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box__up__right {
-  grid-area: ur;
-}
-
-.box__up__right small {
-  margin-right: 100px;
-}
-
-.box__up__left {
-  grid-area: ul;
-  flex-direction: column;
-}
-
-.box__center {
-  grid-area: c;
-}
-
-.box__center__1 {
+  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  margin-bottom: 120px;
+
 }
 
-.box__center__1 h1 {
+.main h1 {
   line-height: 95%;
 }
 
-.box__center__1 small {
+.main small {
   line-height: 300%;
 }
 
-.box__center__1__small__up {
+.main__small__up {
   margin-right: 20em;
 
 }
 
-.box__center__1__small__down__up {
+.main__small__down__up {
   margin-left: 7em;
 
 }
 
-.box__center__1__small__down__down {
+.main__small__down__down {
   margin-left: 11em;
 }
 
 
-.box__down__left {
-  grid-area: dl;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px
+.socialmedia svg {
+width: 30px;
+margin-bottom: 10px;
 }
 
-.box__down__right {
-  grid-area: dr;
+.scroll {
+position: fixed;
+bottom: 50px;
+right: 10px;
 
 }
 
-.box__down__right__rotate {
+.scroll__rotate {
   display: flex;
   rotate: 90deg;
-
-
 }
 
-.box__down__right__rotate small {
+.scroll__rotate small {
   line-height: 20%;
 }
 
-#box3 {
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
+.contact {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+
 }
 
-#box3>div {
-  width: 50%;
+.contact>div {
+  width: 40%;
   height: 100%;
 }
 
-.box__center__left3__text {
+.contact__box__text {
   width: 80%;
   text-align: center;
 }
 
-.box__center__left3__text__lorem {
+.contact__box__text__lorem {
   margin-top: 30px;
 }
-.box__center__left3__text__adress{
+.contact__box__text__adress{
   margin-top: 20px; 
 }
 
-.box__center__left3__text__adress small {
+.contact__box__text__adress small {
   vertical-align: super;
 }
 
 
-.box__center__right3 {
+.form__container {
+  background-color: rgb(32, 32, 32);
   border: medium solid rgb(25, 25, 25);
   box-shadow: -3px 5px 15px 5px #000000;
-  max-height: 270px;
+  max-height: 350px;
   margin-bottom: 80px;
   max-width: 90%;
 }
 
 .form {
-  width: 85%;
-  height: 200px;
+  height: 100%;
   margin: auto;
   margin-top: 10px;
   display: flex;
@@ -401,28 +291,27 @@ h6 {
   align-items: center;
 }
 
+
+
 .form input {
-  width: 100%;
-  height: 30px;
-  font-size: 0.7em;
+  
+  height: 45px;
+  font-size: 1em;
   font-family: "CeraCY-Regular";
-  color: rgb(194, 194, 194);
+  color: #fff;
 }
 
 .form__buttom {
-  border: medium solid rgb(0, 0, 0);
-  width: 30%;
-  max-width: 160px;
-  height: 60px;
+  border: rgb(15, 15, 15);
+  border-width: 36px;
+  width: 60%;
   cursor: pointer;
-  box-shadow: 6px 6px 5px 0px rgba(58, 58, 58, 0.75);
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.75);
   margin-top: 20px;
 
 }
 
 .footer {
-  margin-top: 120px;
-  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -436,7 +325,7 @@ h6 {
 
 
 @media (max-width: 400px) {
-  .box__center small {
+  .main small {
     margin: auto 0;
   }
 
@@ -454,7 +343,7 @@ h6 {
 
 @media (max-width: 600px) {
 
-.box__center__left3__text__lorem {
+.contact__box__text__lorem {
   display: none;
 }
 }
