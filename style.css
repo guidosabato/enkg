@@ -134,13 +134,14 @@ html {
 }
 
 body {
+  padding: 20px;
   font-size: 100%;
   background: radial-gradient(ellipse at center, rgba(149, 143, 149, 1) 0%, rgb(0, 0, 0) 100%);
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   font-family: Cera CeraCY-regular, sans-serif;
   display: flex;
   flex-direction: column;
-  opacity: .7;
+  opacity: 1;
   width: 98%;
 
 }
@@ -183,12 +184,12 @@ h6 {
   color: rgb(180, 180, 180);
 }
 
-.header {
+.nav {
   display: flex;
   justify-content: space-between;
 }
 
-.main {
+.header {
   height: 80vh;
   display: flex;
   align-items: center;
@@ -198,25 +199,25 @@ h6 {
 
 }
 
-.main h1 {
+.header h1 {
   line-height: 95%;
 }
 
-.main small {
+.header small {
   line-height: 300%;
 }
 
-.main__small__up {
+.header__small__up {
   margin-right: 20em;
 
 }
 
-.main__small__down__up {
+.header__small__down__up {
   margin-left: 7em;
 
 }
 
-.main__small__down__down {
+.header__small__down__down {
   margin-left: 11em;
 }
 
@@ -242,11 +243,76 @@ h6 {
   line-height: 20%;
 }
 
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 100px;
+}
+.slider {
+  width: 40%;
+  margin: auto;
+  overflow: hidden;
+ 
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+}
+
+.main__cafe {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  text-align: center;
+}
+.main input {
+  padding: 5px;
+  background-color: #434343;
+  width: 30%;
+}
+.main h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.main p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
 .contact {
+  margin-top: 100px;
   height: 80vh;
   display: flex;
   justify-content: center;
 }
+
 
 .contact>div {
   width: 40%;
@@ -326,11 +392,11 @@ h6 {
 
 
 @media (max-width: 400px) {
-  .main small {
+  .header small {
     margin: auto 0;
   }
 
-  .main {
+  .header {
     width: 99%;
 
   }
@@ -345,29 +411,38 @@ h6 {
 @media (max-width: 600px) {
 
   h1 {
-  font-size: 4em;
+  font-size: 5em;
   }
 
-  .main {
+  .header {
     margin-top: 40px;
     height: 40vh;
     text-align: center;
   }
 
-  .header {
+  .nav {
     margin-top: 20px;
     justify-content: space-around;
   }
 
-  .header__logo {
+  .nav__logo {
     display: none;
   }
 
 
   .header small {
-    font-size: 1em;
+    font-size: 0.7em;
     line-height: normal;
   }
+.main__cafe {
+  width: 100%;
+}
+.slider {
+  width: 90%;
+}
+.main input {
+  width: 70%;
+}
 
   .contact__box__text__lorem {
     display: none;
@@ -412,7 +487,7 @@ h6 {
   }
 
   .footer {
-    margin-top: 40px;
+    margin-top: 100px;
   }
 
 }
